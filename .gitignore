@@ -198,3 +198,5 @@ FakesAssemblies/
 libimobiledevice-source/
 iconv-source/
 libplist-source/
+src/OpenSSL-x64/
+src/OpenSSL-Win32/

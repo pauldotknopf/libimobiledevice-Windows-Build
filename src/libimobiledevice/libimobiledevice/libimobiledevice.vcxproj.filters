@@ -13,14 +13,23 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="libusbmux">
+      <UniqueIdentifier>{22641e14-c78b-4113-a648-2041826149e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libplist">
+      <UniqueIdentifier>{95ddf886-7ca1-42fd-ab8d-4aea795768e1}</UniqueIdentifier>
+    </Filter>
     <Filter Include="libcnary">
-      <UniqueIdentifier>{2d23e6bb-3a61-45f3-b995-a69126156477}</UniqueIdentifier>
+      <UniqueIdentifier>{88a15bf5-5d2c-48f9-aedb-22dfdcc3974a}</UniqueIdentifier>
     </Filter>
-    <Filter Include="libxml2">
-      <UniqueIdentifier>{32fa7831-f8c5-4de3-898c-321338bc9d09}</UniqueIdentifier>
+    <Filter Include="libimobiledevice">
+      <UniqueIdentifier>{66d34666-9bb9-45fa-87fe-f90b6b2d477e}</UniqueIdentifier>
     </Filter>
-    <Filter Include="libiconv">
-      <UniqueIdentifier>{b57b2f36-e07e-459e-be0e-35ad9f02d0f7}</UniqueIdentifier>
+    <Filter Include="libimobiledevice\Headers">
+      <UniqueIdentifier>{958c6ae4-21c5-474c-8d15-c22a48b448ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libgen">
+      <UniqueIdentifier>{59675f5d-d1b4-41ab-815f-15932d7fe58b}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -33,8 +42,77 @@
     <ClInclude Include="targetver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="libxmlconfig.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="..\..\..\libimobiledevice-source\include\asprintf.h">
+      <Filter>libimobiledevice\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\libimobiledevice-source\include\endianness.h">
+      <Filter>libimobiledevice\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\libimobiledevice-source\include\libimobiledevice\afc.h">
+      <Filter>libimobiledevice\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\libimobiledevice-source\include\libimobiledevice\debugserver.h">
+      <Filter>libimobiledevice\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\libimobiledevice-source\include\libimobiledevice\diagnostics_relay.h">
+      <Filter>libimobiledevice\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\libimobiledevice-source\include\libimobiledevice\file_relay.h">
+      <Filter>libimobiledevice\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\libimobiledevice-source\include\libimobiledevice\heartbeat.h">
+      <Filter>libimobiledevice\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\libimobiledevice-source\include\libimobiledevice\house_arrest.h">
+      <Filter>libimobiledevice\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\libimobiledevice-source\include\libimobiledevice\installation_proxy.h">
+      <Filter>libimobiledevice\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\libimobiledevice-source\include\libimobiledevice\libimobiledevice.h">
+      <Filter>libimobiledevice\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\libimobiledevice-source\include\libimobiledevice\lockdown.h">
+      <Filter>libimobiledevice\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\libimobiledevice-source\include\libimobiledevice\misagent.h">
+      <Filter>libimobiledevice\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\libimobiledevice-source\include\libimobiledevice\mobile_image_mounter.h">
+      <Filter>libimobiledevice\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\libimobiledevice-source\include\libimobiledevice\mobilebackup.h">
+      <Filter>libimobiledevice\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\libimobiledevice-source\include\libimobiledevice\mobilebackup2.h">
+      <Filter>libimobiledevice\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\libimobiledevice-source\include\libimobiledevice\mobilesync.h">
+      <Filter>libimobiledevice\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\libimobiledevice-source\include\libimobiledevice\notification_proxy.h">
+      <Filter>libimobiledevice\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\libimobiledevice-source\include\libimobiledevice\property_list_service.h">
+      <Filter>libimobiledevice\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\libimobiledevice-source\include\libimobiledevice\restore.h">
+      <Filter>libimobiledevice\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\libimobiledevice-source\include\libimobiledevice\sbservices.h">
+      <Filter>libimobiledevice\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\libimobiledevice-source\include\libimobiledevice\screenshotr.h">
+      <Filter>libimobiledevice\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\libimobiledevice-source\include\libimobiledevice\service.h">
+      <Filter>libimobiledevice\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\libimobiledevice-source\include\libimobiledevice\syslog_relay.h">
+      <Filter>libimobiledevice\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\libimobiledevice-source\include\libimobiledevice\webinspector.h">
+      <Filter>libimobiledevice\Headers</Filter>
     </ClInclude>
     <ClInclude Include="config.h">
       <Filter>Header Files</Filter>
@@ -50,29 +128,140 @@
     <ClCompile Include="dllmain.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\libplist-source\libcnary\iterator.c">
-      <Filter>libcnary</Filter>
+    <ClCompile Include="..\..\..\libplist-source\src\base64.c">
+      <Filter>libplist</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\libplist-source\libcnary\list.c">
-      <Filter>libcnary</Filter>
+    <ClCompile Include="..\..\..\libplist-source\src\bplist.c">
+      <Filter>libplist</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\libplist-source\libcnary\node.c">
-      <Filter>libcnary</Filter>
+    <ClCompile Include="..\..\..\libplist-source\src\bytearray.c">
+      <Filter>libplist</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\libplist-source\libcnary\node_iterator.c">
-      <Filter>libcnary</Filter>
+    <ClCompile Include="..\..\..\libplist-source\src\hashtable.c">
+      <Filter>libplist</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\libplist-source\libcnary\node_list.c">
-      <Filter>libcnary</Filter>
+    <ClCompile Include="..\..\..\libplist-source\src\plist.c">
+      <Filter>libplist</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\libimobiledevice-source\libiconv\iconv.c">
-      <Filter>libiconv</Filter>
+    <ClCompile Include="..\..\..\libplist-source\src\ptrarray.c">
+      <Filter>libplist</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\libimobiledevice-source\libiconv\localcharset.c">
-      <Filter>libiconv</Filter>
+    <ClCompile Include="..\..\..\libplist-source\src\xplist.c">
+      <Filter>libplist</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\libimobiledevice-source\libiconv\relocatable.c">
-      <Filter>libiconv</Filter>
+    <ClCompile Include="..\..\..\libusbmux-source\common\socket.c">
+      <Filter>libusbmux</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\libusbmux-source\common\collection.c">
+      <Filter>libusbmux</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\libusbmux-source\tools\iproxy.c">
+      <Filter>libusbmux</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\libusbmux-source\src\libusbmuxd.c">
+      <Filter>libusbmux</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\libimobiledevice-windows-source\libcnary\iterator.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\libimobiledevice-windows-source\libcnary\list.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\libimobiledevice-windows-source\libcnary\node.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\libimobiledevice-windows-source\libcnary\node_iterator.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\libimobiledevice-windows-source\libcnary\node_list.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\libimobiledevice-source\src\afc.c">
+      <Filter>libimobiledevice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\libimobiledevice-source\src\debugserver.c">
+      <Filter>libimobiledevice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\libimobiledevice-source\src\device_link_service.c">
+      <Filter>libimobiledevice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\libimobiledevice-source\src\diagnostics_relay.c">
+      <Filter>libimobiledevice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\libimobiledevice-source\src\file_relay.c">
+      <Filter>libimobiledevice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\libimobiledevice-source\src\heartbeat.c">
+      <Filter>libimobiledevice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\libimobiledevice-source\src\house_arrest.c">
+      <Filter>libimobiledevice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\libimobiledevice-source\src\idevice.c">
+      <Filter>libimobiledevice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\libimobiledevice-source\src\installation_proxy.c">
+      <Filter>libimobiledevice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\libimobiledevice-source\src\lockdown.c">
+      <Filter>libimobiledevice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\libimobiledevice-source\src\misagent.c">
+      <Filter>libimobiledevice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\libimobiledevice-source\src\mobile_image_mounter.c">
+      <Filter>libimobiledevice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\libimobiledevice-source\src\mobilebackup.c">
+      <Filter>libimobiledevice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\libimobiledevice-source\src\mobilebackup2.c">
+      <Filter>libimobiledevice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\libimobiledevice-source\src\mobilesync.c">
+      <Filter>libimobiledevice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\libimobiledevice-source\src\notification_proxy.c">
+      <Filter>libimobiledevice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\libimobiledevice-source\src\property_list_service.c">
+      <Filter>libimobiledevice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\libimobiledevice-source\src\restore.c">
+      <Filter>libimobiledevice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\libimobiledevice-source\src\sbservices.c">
+      <Filter>libimobiledevice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\libimobiledevice-source\src\screenshotr.c">
+      <Filter>libimobiledevice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\libimobiledevice-source\src\service.c">
+      <Filter>libimobiledevice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\libimobiledevice-source\src\syslog_relay.c">
+      <Filter>libimobiledevice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\libimobiledevice-source\src\webinspector.c">
+      <Filter>libimobiledevice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\libimobiledevice-source\common\debug.c">
+      <Filter>libimobiledevice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\libimobiledevice-source\common\socket.c">
+      <Filter>libimobiledevice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\libimobiledevice-source\common\thread.c">
+      <Filter>libimobiledevice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\libimobiledevice-source\common\userpref.c">
+      <Filter>libimobiledevice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\libimobiledevice-windows-source\libgen\libgen.cpp">
+      <Filter>libgen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\libimobiledevice-source\common\utils.c">
+      <Filter>libimobiledevice</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
