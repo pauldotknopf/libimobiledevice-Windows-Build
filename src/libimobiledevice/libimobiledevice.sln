@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libimobiledevice", "libimobiledevice\libimobiledevice.vcxproj", "{23BDE57A-28AC-42F6-A18A-878A40C5A8D5}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libimobiledevicetest", "libimobiledevicetest\libimobiledevicetest.vcxproj", "{5AE6918C-E9FF-4C8E-8AC7-E1B86A111E46}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -15,6 +17,10 @@ Global
 		{23BDE57A-28AC-42F6-A18A-878A40C5A8D5}.Debug|Win32.Build.0 = Debug|Win32
 		{23BDE57A-28AC-42F6-A18A-878A40C5A8D5}.Release|Win32.ActiveCfg = Release|Win32
 		{23BDE57A-28AC-42F6-A18A-878A40C5A8D5}.Release|Win32.Build.0 = Release|Win32
+		{5AE6918C-E9FF-4C8E-8AC7-E1B86A111E46}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5AE6918C-E9FF-4C8E-8AC7-E1B86A111E46}.Debug|Win32.Build.0 = Debug|Win32
+		{5AE6918C-E9FF-4C8E-8AC7-E1B86A111E46}.Release|Win32.ActiveCfg = Release|Win32
+		{5AE6918C-E9FF-4C8E-8AC7-E1B86A111E46}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
