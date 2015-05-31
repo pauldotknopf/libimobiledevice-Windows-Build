@@ -2,6 +2,7 @@
 //
 
 #include "stdafx.h"
+#include <iostream>
 
 #include <libimobiledevice/libimobiledevice.h>
 #include <libimobiledevice/lockdown.h>
@@ -16,13 +17,20 @@ lockdownd_client_t control = NULL;
 lockdownd_service_descriptor_t service = NULL;
 house_arrest_client_t house_arrest = NULL;
 
+static void device_subscribed(const idevice_event_t *event, void *user_data)
+{
+	std::cout << "Subcribe!" << std::endl;
+}
+
 int _tmain(int argc, _TCHAR* argv[])
 {
 	int res = EXIT_FAILURE;
 	lockdownd_error_t lockdownResult = LOCKDOWN_E_SUCCESS;
 	house_arrest_error_t houseArrestResult = HOUSE_ARREST_E_SUCCESS;
 
-	idevice_new(&phone, NULL);
+	idevice_event_subscribe(&device_subscribed, NULL);
+
+	/*idevice_new(&phone, NULL);
 
 	lockdownResult = lockdownd_client_new_with_handshake(phone, &control, "ifuse");
 
@@ -48,7 +56,9 @@ int _tmain(int argc, _TCHAR* argv[])
 		if (str) free(str);
 		return EXIT_FAILURE;
 	}
-	plist_free(dict);
+	plist_free(dict);*/
+
+	getchar();
 
 	return 0;
 }
