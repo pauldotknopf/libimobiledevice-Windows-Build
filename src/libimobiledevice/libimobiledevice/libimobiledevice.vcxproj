@@ -30,7 +30,7 @@
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup>
-    <LibMobileDeviceDefines>__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;plist_EXPORTS;HAVE_OPENSSL;HAVE_CONFIG_H</LibMobileDeviceDefines>
+    <LibMobileDeviceDefines>__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;plist_EXPORTS;HAVE_OPENSSL;HAVE_CONFIG_H;__LITTLE_ENDIAN__</LibMobileDeviceDefines>
     <!--<LibMobileDeviceConvIncludeDir>..\..\..\libimobiledevice-windows-source\libiconv\include\</LibMobileDeviceConvIncludeDir>-->
     <!--<LibMobileDeviceXmlIncludeDir>..\..\..\libimobiledevice-windows-source\libxml2\src\</LibMobileDeviceXmlIncludeDir>-->
     <LibMobileDeviceConvIncludeDir>..\..\iconv-1.9.2.win32\include\</LibMobileDeviceConvIncludeDir>

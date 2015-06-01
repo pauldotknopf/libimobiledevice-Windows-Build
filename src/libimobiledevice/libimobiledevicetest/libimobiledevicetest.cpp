@@ -3,6 +3,7 @@
 
 #include "stdafx.h"
 #include <iostream>
+#include <assert.h>
 
 #include <libimobiledevice/libimobiledevice.h>
 #include <libimobiledevice/lockdown.h>
@@ -24,29 +25,31 @@ static void device_subscribed(const idevice_event_t *event, void *user_data)
 
 int _tmain(int argc, _TCHAR* argv[])
 {
+	//idevice_event_subscribe(&device_subscribed, NULL);
+
 	int res = EXIT_FAILURE;
 	lockdownd_error_t lockdownResult = LOCKDOWN_E_SUCCESS;
 	house_arrest_error_t houseArrestResult = HOUSE_ARREST_E_SUCCESS;
+	afc_error_t afcResult = AFC_E_SUCCESS;
 
-	idevice_event_subscribe(&device_subscribed, NULL);
-
-	/*idevice_new(&phone, NULL);
+	idevice_new(&phone, NULL);
+	assert(phone != NULL);
 
 	lockdownResult = lockdownd_client_new_with_handshake(phone, &control, "ifuse");
+	assert(lockdownResult == LOCKDOWN_E_SUCCESS);
 
 	lockdownResult = lockdownd_start_service(control, HOUSE_ARREST_SERVICE_NAME, &service);
 
 	houseArrestResult = house_arrest_client_new(phone, service, &house_arrest);
-
-	if (!house_arrest) {
-		fprintf(stderr, "Could not start document sharing service!\n");
-		return EXIT_FAILURE;
-	}
+	assert(houseArrestResult == HOUSE_ARREST_E_SUCCESS);
+	assert(house_arrest != NULL);
 
 	houseArrestResult = house_arrest_send_command(house_arrest, "VendDocuments", "com.adobe.Adobe-Reader");
+	assert(houseArrestResult == HOUSE_ARREST_E_SUCCESS);
 
 	plist_t dict = NULL;
 	houseArrestResult = house_arrest_get_result(house_arrest, &dict);
+	assert(houseArrestResult == HOUSE_ARREST_E_SUCCESS);
 
 	plist_t node = plist_dict_get_item(dict, "Error");
 	if (node) {
@@ -56,10 +59,21 @@ int _tmain(int argc, _TCHAR* argv[])
 		if (str) free(str);
 		return EXIT_FAILURE;
 	}
-	plist_free(dict);*/
+	plist_free(dict);
 
-	getchar();
+	//lockdownResult = lockdownd_client_free(control);
 
+	afc_client_t afc = NULL;
+	afcResult = afc_client_new_from_house_arrest_client(house_arrest, &afc);
+	assert(afcResult == AFC_E_SUCCESS);
+
+	afcResult = afc_make_directory(afc, "/Documents/test");
+	assert(afcResult == AFC_E_SUCCESS);
+
+	char **dirs = NULL;
+	afcResult = afc_read_directory(afc, "/Documents", &dirs);
+	assert(afcResult == AFC_E_SUCCESS);
+	
 	return 0;
 }
 
